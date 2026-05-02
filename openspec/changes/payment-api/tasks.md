@@ -9,10 +9,10 @@
 
 ## 2. Service
 
-- [ ] 2.1 Create PaymentService.java in service package
-- [ ] 2.2 Add receivePayment() method that saves Payment and OutboxMessage in one transaction
-- [ ] 2.3 Add getPayment() method that finds payment by id and returns PaymentResponse
-- [ ] 2.4 Add private mapToResponse() helper to convert Payment entity to PaymentResponse DTO
+- [x] 2.1 Create PaymentService.java in service package
+- [x] 2.2 Add receivePayment() method that saves Payment and OutboxMessage in one transaction
+- [x] 2.3 Add getPayment() method that finds payment by id and returns PaymentResponse
+- [x] 2.4 Add private mapToResponse() helper to convert Payment entity to PaymentResponse DTO
 
 ## 3. Controller
 

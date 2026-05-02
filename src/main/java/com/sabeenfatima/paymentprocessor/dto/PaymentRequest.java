@@ -5,6 +5,7 @@ import jakarta.validation.constraints.Positive;
 import lombok.Data;
 import java.math.BigDecimal;
 
+@Data
 public class PaymentRequest {
     @NotNull(message = "Amount is required")
     @Positive(message = "Amount must be positive")
