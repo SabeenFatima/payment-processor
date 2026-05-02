@@ -16,10 +16,10 @@
 
 ## 3. Controller
 
-- [ ] 3.1 Create PaymentController.java in controller package
-- [ ] 3.2 Add POST /payments endpoint returning 202 Accepted
-- [ ] 3.3 Add GET /payments/{id} endpoint returning 200 OK
-- [ ] 3.4 Add @Valid annotation on POST request body
+- [x] 3.1 Create PaymentController.java in controller package
+- [x] 3.2 Add POST /payments endpoint returning 202 Accepted
+- [x] 3.3 Add GET /payments/{id} endpoint returning 200 OK
+- [x] 3.4 Add @Valid annotation on POST request body
 
 ## 4. Verification
 
