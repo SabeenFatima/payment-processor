@@ -54,7 +54,7 @@ Template:
 
 - [x] 4.1 Run the application and confirm tables are
   created in PostgreSQL
-- [] 4.2 Check tables exist using IntelliJ database viewer
+- [x] 4.2 Check tables exist using IntelliJ database viewer
 
 
 ---
@@ -62,7 +62,7 @@ Template:
 Dependencies:
 
 ### specs — Detailed specifications for the change
-Path: specs/**/*.md (not yet completed)
+Path: specs/**/*.md 
 
 ### design — Technical design document with implementation details
 
