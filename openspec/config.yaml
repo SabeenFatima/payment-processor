@@ -1,0 +1,75 @@
+schema: spec-driven
+
+project:
+  name: payment-processor
+  description: Async payment processing system using Spring Boot, PostgreSQL and RabbitMQ
+  author: Sabeen Fatima
+
+context: |
+  Tech stack: Java, Spring Boot, PostgreSQL, RabbitMQ, Docker
+  Architecture: Event-driven + Outbox pattern
+  Domain: Payment processing system (async, reliable, scalable)
+
+  Core idea:
+  - Receive payments via REST API
+  - Persist payments in PostgreSQL DB
+  - Process payments asynchronously via RabbitMQ queue
+  - Ensure no data loss using Outbox pattern
+  - Support multiple workers (horizontal scaling)
+
+  Payment flow:
+  1. Client sends POST /payments and API receives payment request
+  2. Payment saved in PostgreSQL DB with status RECEIVED
+  3. Outbox message stored in same DB transaction
+  4. Scheduler publishes messages to RabbitMQ
+  5. Worker consumes message from queue 
+  6. Worker calls Mock Payment Service (10ms - 2s delay)
+  7. Payment status updated (COMPLETED / FAILED)
+
+  Key design principles:
+  - PostgreSQL Database is the source of truth for all payment states
+  - RabbitMQ is used only for async processing, not as source of truth
+  - Outbox pattern ensures reliable event publishing without data loss
+  - On restart, IN_PROGRESS payments are automatically re-queued
+
+rules:
+  proposal:
+    - Keep proposals simple and implementation-focused
+    - Avoid over-engineering or adding unnecessary features
+    - Every proposal must include: API design, component list, failure handling
+    - Must explain failure handling clearly (what happens if system crashes)
+
+  tasks:
+    - Break work into small Spring Boot modules
+    - Build in this order: entities → repositories → services → controllers
+    - Always include test tasks for each feature
+    - Prefer incremental delivery (MVP first, then enhancements)
+
+  architecture:
+    - Always maintain separation between:
+        - Controller layer (API)
+        - Service layer (business logic)
+        - Repository layer (DB access)
+    - Use DTOs for all API communication
+    - Entities must never be exposed directly to API
+    - Outbox pattern must be used for all queue publishing to ensure reliability
+
+  reliability:
+    - No payment should be lost on restart
+    - Outbox messages must be saved in same DB transaction as Payment entity
+    - RabbitMQ acknowledgements must be manual (Acknowledge only after DB is updated)
+    - On restart, system must automatically re-queue any IN_PROGRESS payments
+
+  api:
+    - Expose only two endpoints:
+        - POST /payments: returns 202 Accepted with payment ID and RECEIVED status
+        - GET /payments/{id}: returns 200 OK with current payment status
+    - All responses use PaymentResponse DTO, never the Payment entity directly
+    - Validate all incoming requests using Bean Validation annotations
+
+  testing:
+    - Functional tests must verify all four payment states (RECEIVED, IN_PROGRESS, COMPLETED, FAILED)
+    - Restart test must prove no payment is lost after killing and restarting the app
+    - Performance tests must compare single instance vs two instances using Gatling (Horizontal scaling)
+    - Document results in a test report with observations and bottlenecks
+
