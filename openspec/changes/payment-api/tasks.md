@@ -5,7 +5,7 @@
 - [x] 1.1 Create PaymentRequest.java in dto package with amount, currency, description fields
 - [x] 1.2 Add @NotNull validation on amount and currency fields
 - [x] 1.3 Add @Positive validation on amount field
-- [ ] 1.4 Create PaymentResponse.java in dto package with id, amount, currency, description, status, createdAt, updatedAt
+- [x] 1.4 Create PaymentResponse.java in dto package with id, amount, currency, description, status, createdAt, updatedAt
 
 ## 2. Service
 
