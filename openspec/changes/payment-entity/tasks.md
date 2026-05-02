@@ -39,22 +39,22 @@ Template:
 
 ## 2. Payment Entity
 
-- [ ] 2.1 Create Payment.java with @Entity and @Table annotations
-- [ ] 2.2 Add UUID primary key with @GeneratedValue
-- [ ] 2.3 Add amount, currency, description fields
-- [ ] 2.4 Add status field with @Enumerated(EnumType.STRING)
-- [ ] 2.5 Add createdAt and updatedAt with @PrePersist @PreUpdate
+- [x] 2.1 Create Payment.java with @Entity and @Table annotations
+- [x] 2.2 Add UUID primary key with @GeneratedValue
+- [x] 2.3 Add amount, currency, description fields
+- [x] 2.4 Add status field with @Enumerated(EnumType.STRING)
+- [x] 2.5 Add createdAt and updatedAt with @PrePersist @PreUpdate
 
 ## 3. Repository
 
-- [ ] 3.1 Create PaymentRepository.java extending JpaRepository
-- [ ] 3.2 Add findByStatus() method for startup recovery
+- [x] 3.1 Create PaymentRepository.java extending JpaRepository
+- [x] 3.2 Add findByStatus() method for startup recovery
 
 ## 4. Verification
 
-- [ ] 4.1 Run the application and confirm tables are
+- [x] 4.1 Run the application and confirm tables are
   created in PostgreSQL
-- [ ] 4.2 Check tables exist using IntelliJ database viewer
+- [] 4.2 Check tables exist using IntelliJ database viewer
 
 
 ---
