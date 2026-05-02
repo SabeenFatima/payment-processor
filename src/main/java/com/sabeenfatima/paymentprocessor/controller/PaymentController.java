@@ -37,4 +37,9 @@ public class PaymentController {
         return ResponseEntity.ok(response);
     }
 
+    @ExceptionHandler(RuntimeException.class)
+    public ResponseEntity<String> handleNotFound(RuntimeException ex) {
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(ex.getMessage());
+    }
+
 }

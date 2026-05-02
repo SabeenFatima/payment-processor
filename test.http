@@ -1,0 +1,22 @@
+### Create payment
+POST http://localhost:8080/payments
+Content-Type: application/json
+
+{
+  "amount": 99.99,
+  "currency": "EUR",
+  "description": "Test payment"
+}
+
+### Get payment status
+GET http://localhost:8080/payments/a76120b9-c25c-49b6-8424-9fc7cbfd692c
+
+### Get non-existing payment - should return 404
+GET http://localhost:8080/payments/00000000-0000-0000
+
+### Test validation - should return 400
+POST http://localhost:8080/payments
+Content-Type: application/json
+
+
+{}

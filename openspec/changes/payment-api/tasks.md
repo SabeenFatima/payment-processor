@@ -21,9 +21,9 @@
 - [x] 3.3 Add GET /payments/{id} endpoint returning 200 OK
 - [x] 3.4 Add @Valid annotation on POST request body
 
-## 4. Verification
+## 4. Testing
 
-- [ ] 4.1 Run the application and confirm it starts without errors
-- [ ] 4.2 Test POST /payments with Postman or IntelliJ HTTP client
-- [ ] 4.3 Test GET /payments/{id} and confirm status is RECEIVED
-- [ ] 4.4 Test POST /payments with missing amount and confirm 400 response
+- [x] 4.1 Run the application and confirm it starts without errors
+- [x] 4.2 Test POST /payments with Postman or IntelliJ HTTP client
+- [x] 4.3 Test GET /payments/{id} and confirm status is RECEIVED
+- [x] 4.4 Test POST /payments with missing amount and confirm 400 response
