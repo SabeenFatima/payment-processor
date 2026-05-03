@@ -17,6 +17,10 @@ public class MockPaymentServiceController {
 
         // Task 1.3: random delay 10ms to 2000ms
         int delay = 10 + random.nextInt(1990);
+
+        //For testing purpose I introduced a larger delay of 10s
+        //int delay = 10000;
+
         log.info("Mock service processing payment {} with {}ms delay",
                 paymentId, delay);
         Thread.sleep(delay);

@@ -41,3 +41,14 @@ Content-Type: application/json
 "currency": "USD",
 "description": "Worker test"
 }
+
+### Testing Restart Recover
+
+POST http://localhost:8080/payments
+Content-Type: application/json
+
+{
+  "amount": 15.00,
+  "currency": "USD",
+  "description": "Crash recovery test"
+}
