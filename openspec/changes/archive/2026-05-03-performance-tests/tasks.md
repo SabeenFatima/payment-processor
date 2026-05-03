@@ -39,9 +39,9 @@
 
 ## 6. Test Report
 
-- [ ] 6.1 Create TEST-REPORT.md in project root
-- [ ] 6.2 Document single instance results with numbers from Gatling report
-- [ ] 6.3 Document two instance results with numbers from Gatling report
-- [ ] 6.4 Compare throughput improvement between single and two instances
-- [ ] 6.5 Document at least one bottleneck observed
-- [ ] 6.6 Suggest at least two optimizations for production
+- [x] 6.1 Create TEST-REPORT.md in project root
+- [x] 6.2 Document single instance results with numbers from Gatling report
+- [x] 6.3 Document two instance results with numbers from Gatling report
+- [x] 6.4 Compare throughput improvement between single and two instances
+- [x] 6.5 Document at least one bottleneck observed
+- [x] 6.6 Suggest at least two optimizations for production
