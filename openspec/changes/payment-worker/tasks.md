@@ -23,7 +23,7 @@
 
 ## 3. RabbitMQ Manual Acknowledgement
 
-- [ ] 3.1 Add acknowledgement mode configuration to application.properties
+- [x] 3.1 Add acknowledgement mode configuration to application.properties
 - [ ] 3.2 Verify messages are removed from queue after processing
 
 ## 4. Testing
