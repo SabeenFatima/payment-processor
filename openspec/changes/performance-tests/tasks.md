@@ -2,17 +2,17 @@
 
 ## 1. Gatling Setup
 
-- [ ] 1.1 Add Gatling Maven plugin to pom.xml
-- [ ] 1.2 Add Gatling Java dependency to pom.xml
-- [ ] 1.3 Create simulations folder
+- [x] 1.1 Add Gatling Maven plugin to pom.xml
+- [x] 1.2 Add Gatling Java dependency to pom.xml
+- [x] 1.3 Create simulations folder in test directory
 
 ## 2. Single Instance Simulation
 
-- [ ] 2.1 Create PaymentSimulation.java in simulations folder
-- [ ] 2.2 Configure base URL pointing to localhost:8080
-- [ ] 2.3 Define POST /payments request with valid JSON body
-- [ ] 2.4 Set up scenario with constantUsersPerSec(10) for 60 seconds
-- [ ] 2.5 Add assertion that all responses are 202 Accepted
+- [x] 2.1 Create PaymentSimulation.java in simulations folder
+- [x] 2.2 Configure base URL pointing to localhost:8080
+- [x] 2.3 Define POST /payments request with valid JSON body
+- [x] 2.4 Set up scenario with constantUsersPerSec(10) for 60 seconds
+- [x] 2.5 Add assertion that all responses are 202 Accepted
 
 ## 3. Two Instance Simulation
 
