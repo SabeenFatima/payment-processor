@@ -65,7 +65,6 @@ each other. This is important for horizontal scaling.
 
 PostgreSQL was chosen for its reliability, good JPA support and
 wide use in enterprise Java. It was easy to set up with Docker.
----
 ### Assumptions Made
 
 - The Mock Payment Service runs inside the same application for
