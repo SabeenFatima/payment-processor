@@ -2,7 +2,7 @@
 
 Implementing a reliable async payment processing system 
 using Java, Spring Boot, PostgreSQL and RabbitMQ.
----
+
 ## What It Does
 The application receives payment requests via a REST API. It is 
 saved to the database and queued for async processing. The worker 
