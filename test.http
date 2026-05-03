@@ -52,3 +52,26 @@ Content-Type: application/json
   "currency": "USD",
   "description": "Crash recovery test"
 }
+
+
+### Testing Multiple Instances
+
+### Instance 1
+POST http://localhost:8080/payments
+Content-Type: application/json
+
+{
+  "amount": 10.00,
+  "currency": "USD",
+  "description": "instance 1 test"
+}
+
+### Instance 2
+POST http://localhost:8081/payments
+Content-Type: application/json
+
+{
+  "amount": 10.00,
+  "currency": "USD",
+  "description": "instance 2 test"
+}

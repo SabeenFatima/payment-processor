@@ -24,18 +24,18 @@
 
 ## 4. Run Single Instance Test
 
-- [ ] 4.1 Start app on port 8080 (normal IntelliJ run)
-- [ ] 4.2 Run mvn gatling:test -Dgatling.simulationClass=...PaymentSimulation
-- [ ] 4.3 Open generated HTML report in target/gatling folder
-- [ ] 4.4 Record throughput, mean response time and 95th percentile
+- [x] 4.1 Start app on port 8080 (normal IntelliJ run)
+- [x] 4.2 Run mvn gatling:test -Dgatling.simulationClass=...PaymentSimulation
+- [x] 4.3 Open generated HTML report in target/gatling folder
+- [x] 4.4 Record throughput, mean response time and 95th percentile
 
 ## 5. Run Two Instance Test
 
-- [ ] 5.1 Keep first instance running on port 8080
-- [ ] 5.2 Start second instance on port 8081 by adding server.port=8081 to run config
-- [ ] 5.3 Run mvn gatling:test -Dgatling.simulationClass=...PaymentSimulationScaled
-- [ ] 5.4 Open generated HTML report in target/gatling folder
-- [ ] 5.5 Record throughput, mean response time and 95th percentile
+- [x] 5.1 Keep first instance running on port 8080
+- [x] 5.2 Start second instance on port 8081 by adding server.port=8081 to run config
+- [x] 5.3 Run mvn gatling:test -Dgatling.simulationClass=...PaymentSimulationScaled
+- [x] 5.4 Open generated HTML report in target/gatling folder
+- [x] 5.5 Record throughput, mean response time and 95th percentile
 
 ## 6. Test Report
 
