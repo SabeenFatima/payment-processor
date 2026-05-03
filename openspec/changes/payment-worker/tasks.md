@@ -2,11 +2,11 @@
 
 ## 1. Mock Payment Service
 
-- [ ] 1.1 Create MockPaymentServiceController.java in controller package
-- [ ] 1.2 Add POST /mock/payment-service/process/{paymentId} endpoint
-- [ ] 1.3 Add random delay between 10ms and 2000ms using Thread.sleep
-- [ ] 1.4 Return 200 OK with body "SUCCESS" 90% of the time
-- [ ] 1.5 Return 500 error with body "FAILED" 10% of the time
+- [x] 1.1 Create MockPaymentServiceController.java in controller package
+- [x] 1.2 Add POST /mock/payment-service/process/{paymentId} endpoint
+- [x] 1.3 Add random delay between 10ms and 2000ms using Thread.sleep
+- [x] 1.4 Return 200 OK with body "SUCCESS" 90% of the time
+- [x] 1.5 Return 500 error with body "FAILED" 10% of the time
 
 ## 2. Payment Worker
 
