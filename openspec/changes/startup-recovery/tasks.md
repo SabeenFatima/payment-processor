@@ -2,15 +2,15 @@
 
 ## 1. Startup Recovery Service
 
-- [ ] 1.1 Create StartupRecoveryService.java in service package with @Component annotation
-- [ ] 1.2 Inject PaymentRepository and OutboxMessageRepository via constructor
-- [ ] 1.3 Add recoverOnStartup() method with @EventListener(ApplicationReadyEvent.class)
-- [ ] 1.4 Add @Transactional annotation on recoverOnStartup() method
-- [ ] 1.5 Find all payments with status IN_PROGRESS using findByStatus()
-- [ ] 1.6 Log how many stuck payments were found
-- [ ] 1.7 For each stuck payment reset status to RECEIVED and save to DB
-- [ ] 1.8 For each stuck payment create new OutboxMessage and save to DB
-- [ ] 1.9 Log each recovered payment id
+- [x] 1.1 Create StartupRecoveryService.java in service package with @Component annotation
+- [x] 1.2 Inject PaymentRepository and OutboxMessageRepository via constructor
+- [x] 1.3 Add recoverOnStartup() method with @EventListener(ApplicationReadyEvent.class)
+- [x] 1.4 Add @Transactional annotation on recoverOnStartup() method
+- [x] 1.5 Find all payments with status IN_PROGRESS using findByStatus()
+- [x] 1.6 Log how many stuck payments were found
+- [x] 1.7 For each stuck payment reset status to RECEIVED and save to DB
+- [x] 1.8 For each stuck payment create new OutboxMessage and save to DB
+- [x] 1.9 Log each recovered payment id
 
 ## 2. Testing
 
