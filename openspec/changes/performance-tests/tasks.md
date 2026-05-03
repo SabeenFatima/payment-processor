@@ -16,11 +16,11 @@
 
 ## 3. Two Instance Simulation
 
-- [ ] 3.1 Create PaymentSimulationScaled.java in simulations folder
-- [ ] 3.2 Configure two base URLs pointing to localhost:8080 and localhost:8081
-- [ ] 3.3 Define same POST /payments request for both instances
-- [ ] 3.4 Set up scenario with constantUsersPerSec(20) split across both instances
-- [ ] 3.5 Add assertion that all responses are 202 Accepted
+- [x] 3.1 Create PaymentSimulationScaled.java in simulations folder
+- [x] 3.2 Configure two base URLs pointing to localhost:8080 and localhost:8081
+- [x] 3.3 Define same POST /payments request for both instances
+- [x] 3.4 Set up scenario with constantUsersPerSec(20) split across both instances
+- [x] 3.5 Add assertion that all responses are 202 Accepted
 
 ## 4. Run Single Instance Test
 
