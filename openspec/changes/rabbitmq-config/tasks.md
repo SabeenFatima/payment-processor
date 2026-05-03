@@ -15,8 +15,8 @@
 
 ## 2. App Configuration
 
-- [ ] 2.1 Create AppConfig.java in config package with @Configuration annotation
-- [ ] 2.2 Add RestTemplate bean for calling Mock Payment Service
+- [x] 2.1 Create AppConfig.java in config package with @Configuration annotation
+- [x] 2.2 Add RestTemplate bean for calling Mock Payment Service
 
 ## 3. Testing
 
