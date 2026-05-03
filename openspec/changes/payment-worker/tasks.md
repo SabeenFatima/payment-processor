@@ -24,11 +24,11 @@
 ## 3. RabbitMQ Manual Acknowledgement
 
 - [x] 3.1 Add acknowledgement mode configuration to application.properties
-- [ ] 3.2 Verify messages are removed from queue after processing
+- [x] 3.2 Verify messages are removed from queue after processing
 
 ## 4. Testing
 
-- [ ] 4.1 Run app and send POST /payments
-- [ ] 4.2 Watch logs for IN_PROGRESS then COMPLETED or FAILED status updates
-- [ ] 4.3 Call GET /payments/{id} and confirm final status is COMPLETED or FAILED
-- [ ] 4.4 Send 10 payments and confirm roughly 9 COMPLETED and 1 FAILED
+- [x] 4.1 Run app and send POST /payments
+- [x] 4.2 Watch logs for IN_PROGRESS then COMPLETED or FAILED status updates
+- [x] 4.3 Call GET /payments/{id} and confirm final status is COMPLETED or FAILED
+- [x] 4.4 Send 10 payments and confirm roughly 9 COMPLETED and 1 FAILED
