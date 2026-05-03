@@ -20,8 +20,8 @@
 
 ## 3. Testing
 
-- [ ] 3.1 Run the application and confirm it starts without errors
-- [ ] 3.2 Open RabbitMQ management UI at localhost:15672
-- [ ] 3.3 Confirm payments.queue exists under Queues tab
-- [ ] 3.4 Confirm payments.dead.letter.queue exists under Queues tab
-- [ ] 3.5 Confirm payments.exchange exists under Exchanges tab
+- [x] 3.1 Run the application and confirm it starts without errors
+- [x] 3.2 Open RabbitMQ management UI at localhost:15672
+- [x] 3.3 Confirm payments.queue exists under Queues tab
+- [x] 3.4 Confirm payments.dead.letter.queue exists under Queues tab
+- [x] 3.5 Confirm payments.exchange and payments.dead.letter.exchange exists under Exchanges tab

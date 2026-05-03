@@ -10,8 +10,11 @@ services:
       - "5432:5432"
 
   rabbitmq:
-    image: rabbitmq:latest
+    image: rabbitmq:3-management
     container_name: payments-rabbitmq
     ports:
       - "5672:5672"       # app connects here (backend)
       - "15672:15672"     # browser UI (kind of admin dashboard)
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest

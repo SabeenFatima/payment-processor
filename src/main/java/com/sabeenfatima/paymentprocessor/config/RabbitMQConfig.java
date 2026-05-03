@@ -2,8 +2,10 @@ package com.sabeenfatima.paymentprocessor.config;
 
 import org.springframework.amqp.core.*;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;
+import org.springframework.amqp.rabbit.core.RabbitAdmin;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.amqp.support.converter.JacksonJsonMessageConverter;
+import org.springframework.boot.ApplicationRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -15,6 +17,15 @@ public class RabbitMQConfig {
     public static final String PAYMENT_ROUTING_KEY = "payments.routing.key";
     public static final String DEAD_LETTER_QUEUE = "payments.dead.letter.queue";
     public static final String DEAD_LETTER_EXCHANGE = "payments.dead.letter.exchange";
+
+    @Bean
+    public RabbitAdmin rabbitAdmin(ConnectionFactory connectionFactory) {
+        return new RabbitAdmin(connectionFactory);
+    }
+    @Bean
+    public ApplicationRunner rabbitInitializer(RabbitAdmin rabbitAdmin) {
+        return args -> rabbitAdmin.initialize();
+    }
 
     // Task 1.3: main queue linked to dead letter exchange
     @Bean
