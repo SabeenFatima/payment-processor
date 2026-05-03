@@ -10,16 +10,16 @@
 
 ## 2. Payment Worker
 
-- [ ] 2.1 Create PaymentWorker.java in service package with @Component annotation
-- [ ] 2.2 Inject PaymentRepository and RestTemplate via constructor
-- [ ] 2.3 Add processPayment() method with @RabbitListener on payments.queue
-- [ ] 2.4 Check if payment exists and skip if not found
-- [ ] 2.5 Check current status — skip and ACK if already COMPLETED or FAILED
-- [ ] 2.6 Update payment status to IN_PROGRESS and save to DB
-- [ ] 2.7 Call Mock Payment Service via RestTemplate
-- [ ] 2.8 Update status to COMPLETED if response is 2xx
-- [ ] 2.9 Update status to FAILED if response is error or exception thrown
-- [ ] 2.10 Save final status to DB
+- [x] 2.1 Create PaymentWorker.java in service package with @Component annotation
+- [x] 2.2 Inject PaymentRepository and RestTemplate via constructor
+- [x] 2.3 Add processPayment() method with @RabbitListener on payments.queue
+- [x] 2.4 Check if payment exists and skip if not found
+- [x] 2.5 Check current status — skip and ACK if already COMPLETED or FAILED
+- [x] 2.6 Update payment status to IN_PROGRESS and save to DB
+- [x] 2.7 Call Mock Payment Service via RestTemplate
+- [x] 2.8 Update status to COMPLETED if response is 2xx
+- [x] 2.9 Update status to FAILED if response is error or exception thrown
+- [x] 2.10 Save final status to DB
 
 ## 3. RabbitMQ Manual Acknowledgement
 
