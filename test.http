@@ -18,5 +18,14 @@ GET http://localhost:8080/payments/00000000-0000-0000
 POST http://localhost:8080/payments
 Content-Type: application/json
 
-
 {}
+
+### Test Outbox Pattern
+POST http://localhost:8080/payments
+Content-Type: application/json
+
+{
+  "amount": 50.00,
+  "currency": "USD",
+  "description": "Outbox test"
+}

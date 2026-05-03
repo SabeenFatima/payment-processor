@@ -17,7 +17,7 @@
 
 ## 3. Testing
 
-- [ ] 3.1 Run app and send POST /payments
-- [ ] 3.2 Check IntelliJ logs for "Published payment to queue" message
-- [ ] 3.3 Open RabbitMQ UI and confirm message appears then disappears from payments.queue
-- [ ] 3.4 Check outbox_messages table in DB and confirm sent=true for published messages
+- [x] 3.1 Run app and send POST /payments
+- [x] 3.2 Check IntelliJ logs for "Published payment to queue" message
+- [x] 3.3 Open RabbitMQ UI and confirm message appears then disappears from payments.queue
+- [x] 3.4 Check outbox_messages table in DB and confirm sent=true for published messages
