@@ -3,7 +3,7 @@
 ## 1. Scheduler Setup
 
 - [x] 1.1 Verify @EnableScheduling is present on PaymentApplication.java
-- [ ] 1.2 Create OutboxScheduler.java in service package with @Component annotation
+- [x] 1.2 Create OutboxScheduler.java in service package with @Component annotation
 
 ## 2. Scheduler Implementation
 
