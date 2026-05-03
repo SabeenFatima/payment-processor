@@ -14,11 +14,11 @@
 
 ## 2. Testing
 
-- [ ] 2.1 Run app and send POST /payments
-- [ ] 2.2 Wait for payment to reach IN_PROGRESS in logs
-- [ ] 2.3 Force stop the app immediately using red stop button in IntelliJ
-- [ ] 2.4 Check DB — payment should still be IN_PROGRESS
-- [ ] 2.5 Restart the app
-- [ ] 2.6 Check logs for "Found X stuck IN_PROGRESS payments"
-- [ ] 2.7 Check logs for "Recovered payment {id}"
-- [ ] 2.8 Wait and call GET /payments/{id} — should eventually reach COMPLETED or FAILED
+- [x] 2.1 Run app and send POST /payments
+- [x] 2.2 Wait for payment to reach IN_PROGRESS in logs
+- [x] 2.3 Force stop the app immediately using red stop button in IntelliJ
+- [x] 2.4 Check DB — payment should still be IN_PROGRESS
+- [x] 2.5 Restart the app
+- [x] 2.6 Check logs for "Found X stuck IN_PROGRESS payments"
+- [x] 2.7 Check logs for "Recovered payment {id}"
+- [x] 2.8 Wait and call GET /payments/{id} — should eventually reach COMPLETED or FAILED
