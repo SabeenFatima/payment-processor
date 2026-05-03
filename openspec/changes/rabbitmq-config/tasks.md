@@ -2,16 +2,16 @@
 
 ## 1. RabbitMQ Configuration
 
-- [ ] 1.1 Create RabbitMQConfig.java in config package with @Configuration annotation
-- [ ] 1.2 Add queue name constants as public static final strings
-- [ ] 1.3 Declare main payments.queue as durable with dead letter exchange argument
-- [ ] 1.4 Declare dead letter queue as durable
-- [ ] 1.5 Declare DirectExchange for main payments exchange
-- [ ] 1.6 Declare DirectExchange for dead letter exchange
-- [ ] 1.7 Declare Binding between main queue and main exchange using routing key
-- [ ] 1.8 Declare Binding between dead letter queue and dead letter exchange
-- [ ] 1.9 Add Jackson2JsonMessageConverter bean for JSON messaging
-- [ ] 1.10 Add RabbitTemplate bean using the JSON message converter
+- [x] 1.1 Create RabbitMQConfig.java in config package with @Configuration annotation
+- [x] 1.2 Add queue name constants as public static final strings
+- [x] 1.3 Declare main payments.queue as durable with dead letter exchange argument
+- [x] 1.4 Declare dead letter queue as durable
+- [x] 1.5 Declare DirectExchange for main payments exchange
+- [x] 1.6 Declare DirectExchange for dead letter exchange
+- [x] 1.7 Declare Binding between main queue and main exchange using routing key
+- [x] 1.8 Declare Binding between dead letter queue and dead letter exchange
+- [x] 1.9 Add JacksonJsonMessageConverter bean for JSON messaging
+- [x] 1.10 Add RabbitTemplate bean using the JSON message converter
 
 ## 2. App Configuration
 
